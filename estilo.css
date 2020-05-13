@@ -77,47 +77,67 @@ aside#menu-cortina nav#menu-moviles a:hover {
 
 
 
-aside#wpp {
+aside#menu-flotante {
     width: 50px;
-    height: 50px;
+    height: 170px;
     display: block;
     margin: 0;
     float: none;
     position: fixed;
     
-    bottom: 30px;
-    right: 30px;
+    bottom: 15px;
+    right: 15px;
     z-index: 9999;
+    text-decoration: none;
 }
-aside#wpp a {
+aside#menu-flotante nav {
     width: 100%;
     height: 100%;
     display: block;
     margin: 0 auto;
     float: none;
     position: relative;
-    
     text-decoration: none;
-    background: #107c07;
-    border-radius: 50%;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.55);
-    transition: all 0.3s ease-in;
 }
-aside#wpp a i {
+aside#menu-flotante nav a {
+    width: 50px;
+    height: 50px;
     display: block;
-    font-size: 2.15em;
+    margin: 0 auto 10px;
+    float: none;
+    position: relative;
+    
+    border-radius: 50%;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+}
+aside#menu-flotante nav a i {
     color: #fff;
     text-align: center;
-    padding: 8px 0;
-    transition: all 0.3s ease-in;
+    display: block;
+    font-size: 1.45em;
+    padding: 14px 0;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
 }
-aside#wpp a:hover {
+aside#menu-flotante nav a:nth-child(1) {
+    background: #0ec352;
+}
+aside#menu-flotante nav a:nth-child(2) {
+    background: #a30f0f;
+}
+aside#menu-flotante nav a:nth-child(3) {
+    background: #bbc637;
+}
+aside#menu-flotante nav a:hover {
     background: #fff;
-    transition: all 0.3s ease-in;
+    transform: scale(1.1) rotate(-15deg);
+    transition: all 0.2s ease-in;
 }
-aside#wpp a:hover i {
-    color: #107c07;
-    transition: all 0.3s ease-in;
+aside#menu-flotante nav a:hover i {
+    color: #000;
+    transition: all 0.2s ease-in;
 }
 
 
@@ -134,7 +154,7 @@ header {
     left: 0;
     z-index: 99;
     
-    background: #000;
+    background: #1c1a24;
 }
 header article {
     width: 1000px;
@@ -153,10 +173,10 @@ header article a#logo {
     position: relative;
 }
 header article a#logo img {
-    width: 100%;
+    width: 92%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 2px 53px 16px 8px;
     float: none;
     position: relative;
 }
@@ -172,20 +192,23 @@ header article nav#menu-principal {
     position: relative;
 }
 header article nav#menu-principal a {
-    width: auto;
+   width: auto;
     height: auto;
     display: block;
-    margin: 0;
+    margin: -1px;
     float: left;
     position: relative;
     font-size: 1em;
     text-align: center;
-    padding: 30px 15px;
+    padding: 32px 11px;
     text-decoration: none;
     color: #fff;
+    font-family: 'Patua One', cursive;
 }
 header article nav#menu-principal a:hover {
-    
+     color: #bfbfbf;
+    border-bottom: solid 2px #2db4af;
+    transition: all 0.2s ease-in;
 }
 
 
@@ -206,7 +229,7 @@ main section#banner-foto {
     float: none;
     position: relative;
     
-    background: url('img/Future-city-skyscrapers-lights-night-girl-art-picture_1920x1080.jpg') no-repeat top center fixed #000;
+    background: url(img/fondo-1.jpg) no-repeat top center fixed #000;
     background-size: cover;
 }
 main section#banner-foto article {
@@ -218,21 +241,52 @@ main section#banner-foto article {
     position: relative;
 }
 main section#banner-foto article h1 {
-    text-align: center;
-    font-size: 3.75em;
-    color: #fff;
-    padding: 250px 0 0 0;
+text-align: center;
+    font-size: 6.75em;
+    color: #000000;
+    padding: 244px 0 0 0;
     margin: 0;
-    font-family: 'muthiara_-demo_version-Rg';
+    font-family: 'Archivo Narrow', sans-serif;
+
 }
 main section#banner-foto article p {
     text-align: center;
     font-size: 1.15em;
-    color: #fff;
+    color: #000000;
     margin: 0;
+    font-family:  'Patua One', cursive;
 }
 
 
+main section#banner-foto article a.button {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+    margin: 16px 0 0 0;
+    float: none;
+    position: relative;
+    left: 42%;
+    font-size: 1.1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 12px 20px;
+    font-family: 'Patua One', cursive;
+    font-weight: normal;
+    border-radius: 50px;
+    border: solid 1px #000000;
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+} 
+ 
+
+main section#banner-foto article#cuadro-blanco-que-centra a.button:hover {
+    
+    border: solid 1px #3095de;
+    transition: all 0.3s ease-in;
+    color: #ffffff;
+    
+}
 
 
 main section#fila-4-columnas { 
@@ -242,7 +296,7 @@ main section#fila-4-columnas {
     margin: 0 auto;
     float: none;
     position: relative;
-	background: #ffffff;
+	background: #1c1a24;
 }
 main section#fila-4-columnas article {
 	width: 1200px;
@@ -278,63 +332,143 @@ main section#fila-4-columnas article figure h4 {
     text-align: center;
     margin: 0;
     padding: 15px 0 0 0;
+    font-family: 'Patua One', cursive;
+    color: #ffffff;
 }
 
 
 
 
-main section#cuadros-colores {
+main section#cuadros-imagen {
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 30px 0;
+    background: #1c1a24;
+}
+
+main section#cuadros-imagen article figure#foto1 {
+    width: 50%;
+    height: 630px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background: url(img/cuadro-1-d.jpg) no-repeat top center #000;
+    background-size: cover;
+}
+main section#cuadros-imagen article figure#foto2 {
+  width: 50%;
+    height: 630px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background: url(img/cuadro-2-i.jpg) no-repeat top center #000;
+    background-size: cover;
+}
+
+main section#fila-frase-larga article {
+    width: 900px;
+    height: 222px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    padding: 103px 0 0 0;
+}
+
+main section#fila-frase-larga article h4{
+font-family: 'Archivo Narrow', sans-serif;
+    color: #000000;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 27px 45px;
+    margin: 0;
+    font-weight: 300;
+
+}
+
+main section#fila-3-fotos {
+    width: 100%;
+    height: 600px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background:#1c1a24;
+}
+
+main section#fila-3-fotos article#img-izquierda {
+    width: 33.3%;
+    height: 600px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background: url(img/cuadro-3-a.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+main section#fila-3-fotos article#img-centro {
+    width: 33.3%;
+    height: 600px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background: url(img/cuadro%204%20a.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+main section#fila-3-fotos article#img-derecha {
+    width: 33.3%;
+    height: 600px;
+    display: block;
+    margin: 0;
+    float: left;
+    position: relative;
+    background: url(img/cuadro-5-a.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+    
+    
+}
+footer a {
     width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     float: none;
     position: relative;
+    
+   background: #1c1a24
+    
 }
-main section#cuadros-colores article {
-    width: 100%;
-    height: 350px;
+footer a img {
+    width: auto;
+    height: 40px;
     display: block;
     margin: 0 auto;
     float: none;
     position: relative;
-}
-main section#cuadros-colores article figure#verde {
-    width: 50%;
-    height: 350px;
-    display: block;
-    margin: 0;
-    float: left;
-    position: relative;
+    padding: 25px ;
     
-    
-    background: url('img/fantasy-4063619_1920.jpg') no-repeat top center fixed #000;
-    background-size: cover;
-}
-main section#cuadros-colores article figure#gris {
-    width: 50%;
-    height: 350px;
-    display: block;
-    margin: 0;
-    float: left;
-    position: relative;
-    
-    
-    background: url('img/hong-kong-4103334_1920.jpg') no-repeat top center fixed #000;
-    background-size: cover;
-}
-
-
-
-
-footer {
-	width: 100%;
-    height: 650px;
-    display: block;
-    margin: 0 auto;
-    float: none;
-    position: relative;
-	background: #ffffff;
 }
 
 
